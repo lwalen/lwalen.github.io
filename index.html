@@ -1,69 +1,41 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Lars Walen</title>
-    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
-    <link href='/style.css' media='screen' rel='stylesheet' type='text/css'>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+---
+layout: default
+---
 
-      ga('create', 'UA-58266539-1', 'auto');
-      ga('send', 'pageview');
-    </script>
-  </head>
-  <body>
-    <header>
-      <div class='container'>
-        <a href='/' title='Main Page'>
-          <h1>Lars Walen</h1>
-        </a>
-      </div>
-    </header>
-    <div class='container'>
-      <div class='content'>
-        <h2>About</h2>
-        <p>
-          I studied computer science at <a href='http://mines.edu'>Colorado School of Mines</a>, then I was a software developer at <a href='http://marshill.com'>Mars Hill Church</a>. Now I'm unemployed. Contact me at <a href="mailto:lars@walen.me">lars@walen.me</a>.
-        </p>
-        <h2>Making Stuff</h2>
-        <ul>
-          <li>
-            <a href='chopping-axe-sheath'>Chopping Axe Sheath</a>
-          </li>
-          <li>
-            <a href='splitting-axe-sheath'>Splitting Axe Sheath</a>
-          </li>
-          <li>
-            <a href='tv-stand'>TV Stand</a>
-          </li>
-        </ul>
-        <h2>Links</h2>
-        <ul>
-          <li>
-            <a href='http://bf.walen.me'>Board Feet Calculator</a>
-            - Calculate board feet easily on a phone
-          </li>
-          <li>
-            <a href='http://car.walen.me'>Car Manager</a>
-            - keep track of your car's gas usage and service needs (on Heroku, so give it a few seconds)
-          </li>
-          <li>
-            <a href='http://bible.walen.me'>Daily Bible Plan</a>
-            - read the Bible in a year, starting any time
-          </li>
-          <li>
-            <a href='https://github.com/lwalen'>My GitHub</a>
-            - school and personal projects
-          </li>
-        </ul>
-      </div>
-      <img alt='A photo of me in a suit' class='photo-of-me' src='images/me.jpg' title='A photo of me in a suit'>
-    </div>
-    <br>
-    <br>
-  </body>
-</html>
+<div class='content'>
+  <h2>About</h2>
+  <p>
+    I studied computer science at <a href='http://mines.edu'>Colorado School of Mines</a>, then I was a software developer at <a href='http://marshill.com'>Mars Hill Church</a>. Now I'm unemployed. Contact me at <a href="mailto:lars@walen.me">lars@walen.me</a>.
+  </p>
+
+  <h2>Making Stuff</h2>
+  <ul>
+    {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <h2>Links</h2>
+  <ul>
+    <li>
+      <a href='http://bf.walen.me'>Board Feet Calculator</a>
+      - Calculate board feet easily on a phone
+    </li>
+    <li>
+      <a href='http://car.walen.me'>Car Manager</a>
+      - keep track of your car's gas usage and service needs (on Heroku, so give it a few seconds)
+    </li>
+    <li>
+      <a href='http://bible.walen.me'>Daily Bible Plan</a>
+      - read the Bible in a year, starting any time
+    </li>
+    <li>
+      <a href='https://github.com/lwalen'>My GitHub</a>
+      - school and personal projects
+    </li>
+  </ul>
+</div>
+
+<img alt='A photo of me in a suit' class='photo-of-me' src='images/me.jpg' title='A photo of me in a suit'>
