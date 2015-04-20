@@ -13,6 +13,7 @@ I built this stand to hold my TV in my room at college. I made it foldable so th
 The stand is made of 3/4" by 3 1/2" common pine boards. First the top was made by laminating four pieces together. Then I routed and chiseled the grooves for the horizontal supports.
 
 [![](/img/tv_stand/complete_open_small.jpg)](/img/tv_stand/complete_open.jpg)
+<!-- <img src='/img/loader.gif' data-src='/img/tv_stand/complete_open_small.jpg' /> -->
 
 Next I cut boards for the horizontal supports to length. I then made the triangular stop blocks and glued them to the horizontal supports. These are also recessed into the top of the stand.
 

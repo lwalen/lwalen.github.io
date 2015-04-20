@@ -46,9 +46,10 @@ li {
 a { color: #336699 }
 p { margin: 0 0 20px 0 }
 img {
-    width: 90%;
+    // width: 90%;
     margin: 0 auto;
     margin-bottom: 15px;
+    max-width: 100%;
 }
 // .image img { width: 100% }
 .caption {
@@ -57,7 +58,7 @@ img {
 }
 
 /* Desktop version */
-@media screen and (min-width:768px) { 
+@media screen and (min-width:768px) {
     .container {
         width: 640px;
         margin: 0 auto;
@@ -78,7 +79,7 @@ img {
         font-size: 4em;
         line-height: .72em;
     }
-    p { 
+    p {
         margin-bottom: 30px;
     }
     .image { margin-bottom: 30px }
