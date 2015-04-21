@@ -8,11 +8,16 @@ The plastic blade guard that came with my Fiskars chopping axe was even worse th
 
 This time I didn't take any pictures of making the sheath, because I got caught up making it. The construction is the same as on my splitting axe sheath. I do have pictures after finishing it though!
 
-[![](/img/chopping_axe_sheath/front_small.jpg)](/img/chopping_axe_sheath/front.jpg)
-[![](/img/chopping_axe_sheath/front_stitch_small.jpg)](/img/chopping_axe_sheath/front_stitch.jpg)
-[![](/img/chopping_axe_sheath/on_axe_small.jpg)](/img/chopping_axe_sheath/on_axe.jpg)
-[![](/img/chopping_axe_sheath/strap_stitching_small.jpg)](/img/chopping_axe_sheath/strap_stitching.jpg)
-[![](/img/chopping_axe_sheath/with_axe_small.jpg)](/img/chopping_axe_sheath/with_axe.jpg)
+{{ '/img/chopping_axe_sheath/front.jpg' | image eager: true }}
+
+{{ '/img/chopping_axe_sheath/front_stitch.jpg' | image }}
+
+{{ '/img/chopping_axe_sheath/on_axe.jpg' | image }}
+
+{{ '/img/chopping_axe_sheath/strap_stitching.jpg' | image }}
+
+{{ '/img/chopping_axe_sheath/with_axe.jpg' | image }}
+
 
 If you would like to make your own, I have templates!
 [This PDF](/files/chopping_axe_sheath/plan.pdf)
