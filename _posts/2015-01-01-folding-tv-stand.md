@@ -4,8 +4,6 @@ title:  "Folding TV Stand"
 categories:
 ---
 
-
-
 I built this stand to hold my TV in my room at college. I made it foldable so that it would be compact for when I eventually returned home, and because I wanted to try to build something with moving pieces.
 
 {{ '/img/tv_stand/complete_in_place.jpg' | image eager: true }}

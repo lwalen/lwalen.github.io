@@ -2,7 +2,7 @@ module Jekyll
   module ImageFilter
 
     def image(url, eager = false)
-      small_url = url.sub(/([^.]+)/, '\0_small')
+      small_url = url #.sub(/([^.]+)/, '\0_small')
 
       output = "<a href='#{url}'>"
       if eager
