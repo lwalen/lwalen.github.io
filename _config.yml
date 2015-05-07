@@ -10,4 +10,4 @@ url: "http://lars.walen.me" # the base hostname & protocol for your site
 markdown: kramdown
 
 permalink: /:title
-exclude: process_images
+exclude: [Rakefile, README.md, process_images]
