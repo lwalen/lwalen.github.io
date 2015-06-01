@@ -17,7 +17,7 @@ fi
 files | while read file
 do
 	small_file=$(echo "${file%.*}_small.${file##*.}")
-	size=$(gwc -c "$file" | cut -d ' ' -f 1)
+	size=$(wc -c "$file" | cut -d ' ' -f 1)
 	exif=$(identify -verbose "$file" | grep -i exif)
 
 	if [ "$exif" ]
