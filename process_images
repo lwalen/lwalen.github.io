@@ -6,14 +6,6 @@ function files {
 	find $DIRECTORY -mindepth 2 | egrep "^.*\.(png|jpg)" | grep -v _small
 }
 
-simulate=false
-
-if [ "$1" == "-s" ]
-then
-	simulate=true
-	echo "SIMULATION, run without -s to go for real"
-fi
-
 files | while read file
 do
 	small_file=$(echo "${file%.*}_small.${file##*.}")
@@ -22,7 +14,7 @@ do
 
 	if [ "$exif" ]
 	then
-		[ !$simulate ] && convert "$file" -strip "$file"
+		convert "$file" -strip "$file"
 		echo "strip   :: $file"
 	fi
 
@@ -31,7 +23,7 @@ do
 		echo "exists  :: $small_file"
 	elif [ "$size" -gt 10000 ]
 	then
-		[ !$simulate ] && convert "$file" -resize 512 "$small_file"
+		convert "$file" -resize 512 "$small_file"
 		echo "created :: $small_file"
 	fi
 done
