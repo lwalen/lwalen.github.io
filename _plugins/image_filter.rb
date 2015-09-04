@@ -12,7 +12,7 @@ module Jekyll
 
       small_url = url.sub(/([^.]+)/, '\0_small')
 
-      if !File.exist?(small_url)
+      if !File.exist?(small_url[1..-1])
         small_url = url
       end
 
@@ -31,8 +31,6 @@ module Jekyll
       if link
         output += "</a>"
       end
-
-      puts "#{page_url}: #{link}"
 
       output
     end
