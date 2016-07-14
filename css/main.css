@@ -1,0 +1,87 @@
+/* Wooo, mobile first! */
+body {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  margin: 0; }
+
+.container {
+  margin: 0 10px; }
+
+header {
+  background-color: #336699;
+  position: relative;
+  height: 80px;
+  margin-bottom: 20px; }
+
+h1 {
+  color: white;
+  font-size: 3em;
+  font-weight: 800;
+  line-height: .76em;
+  position: absolute;
+  bottom: 0;
+  margin: 0; }
+
+h2, h3 {
+  font-weight: 400;
+  line-height: 1em;
+  margin: 0 0 10px 0; }
+
+h2 {
+  font-size: 2em; }
+
+h3 {
+  font-size: 1.5em; }
+
+ul {
+  list-style-type: none;
+  margin: 10px 0 30px 0;
+  padding: 0; }
+
+li {
+  margin-bottom: 5px; }
+
+a {
+  color: #336699; }
+
+p {
+  margin: 0 0 20px 0; }
+
+img {
+  margin: 0 auto;
+  max-width: 100%; }
+
+.caption {
+  text-align: center;
+  margin-top: 5px; }
+
+.photo-of-me {
+  margin-bottom: 40px; }
+
+/* Desktop version */
+@media screen and (min-width: 768px) {
+  .container {
+    width: 640px;
+    margin: 0 auto; }
+
+  .content {
+    width: 365px;
+    float: left; }
+
+  .photo-of-me {
+    width: 250px;
+    float: right; }
+
+  header {
+    height: 150px;
+    margin-bottom: 40px; }
+
+  h1 {
+    font-size: 4em;
+    line-height: .72em; }
+
+  p {
+    margin-bottom: 30px; }
+
+  .image {
+    margin-bottom: 30px; } }
